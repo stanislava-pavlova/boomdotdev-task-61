@@ -89,5 +89,15 @@
         </div>
       </div>
     </div>
+
+    <script>
+      const price = document.querySelectorAll('.price');
+
+      for (let p = 0; p < price.length; p++) {
+        if (price[p].classList.contains('hot')) {
+          price[p].textContent += ' 🔥';
+        }
+      }
+    </script>
   </body>
 </html>
